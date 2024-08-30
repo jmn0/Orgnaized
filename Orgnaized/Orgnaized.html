@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orgnaized</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Orgnaized</h1>
+        <nav>
+            <ul>
+                <li><a href="#data-entry">إدخال إجراءات الرصد</a></li>
+                <li><a href="#reports">التقارير</a></li>
+                <li><a href="#records">السجلات</a></li>
+                <li><a href="#data-analysis">تحليل البيانات</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="data-entry">
+            <h2>إدخال إجراءات الرصد</h2>
+            <p>محتوى إدخال إجراءات الرصد هنا.</p>
+        </section>
+        <section id="reports">
+            <h2>التقارير</h2>
+            <p>محتوى التقارير هنا.</p>
+        </section>
+        <section id="records">
+            <h2>السجلات</h2>
+            <div class="record-buttons">
+                <button id="daily-records-btn">السجلات اليومية</button>
+                <button id="weekly-records-btn">السجلات الأسبوعية</button>
+            </div>
+            <div id="record-search">
+                <div id="daily-records" class="record-search-form hidden">
+                    <h3>استعلام السجلات اليومية</h3>
+                    <label for="daily-record-type">نوع السجل:</label>
+                    <select id="daily-record-type">
+                        <option value="cleanliness">سجلات فحص النظافة</option>
+                        <option value="temperature">سجلات فحص درجة الحرارة</option>
+                        <option value="humidity">سجلات فحص الرطوبة</option>
+                    </select>
+                    <label for="daily-date">التاريخ:</label>
+                    <input type="date" id="daily-date">
+                </div>
+                <div id="weekly-records" class="record-search-form hidden">
+                    <h3>استعلام السجلات الأسبوعية</h3>
+                    <label for="weekly-record-type">نوع السجل:</label>
+                    <select id="weekly-record-type">
+                        <option value="cleanliness">سجلات فحص النظافة</option>
+                        <option value="temperature">سجلات فحص درجة الحرارة</option>
+                        <option value="humidity">سجلات فحص الرطوبة</option>
+                    </select>
+                    <label for="weekly-date">التاريخ:</label>
+                    <input type="date" id="weekly-date">
+                </div>
+            </div>
+        </section>
+        <section id="data-analysis">
+            <h2>تحليل البيانات</h2>
+            <p>محتوى تحليل البيانات هنا.</p>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
